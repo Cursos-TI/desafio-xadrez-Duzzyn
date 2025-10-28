@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 int main() {
 
    int torre = 5;
