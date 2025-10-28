@@ -1,10 +1,11 @@
 int main() {
 
-int torre = 5;
-int bispo = 5;
-int rainha = 8;
+   int torre = 5;
+   int bispo = 5;
+   int rainha = 8;
+   int cavalo = 1
 
-int opcoes;
+   int opcoes;
    
     do {
         printf("**Peças Disponiveis**\n");
@@ -12,7 +13,8 @@ int opcoes;
         printf("1. Torre\n");
         printf("2. Bispo\n");
         printf("3. Rainha\n");
-        printf("4. Sair\n");
+        printf("4. Cavalo\n");
+        printf("5. Sair\n");
         printf("ESCOLHA UMA OPÇÃO: \n");
         scanf("%d", &opcoes);
        
@@ -48,12 +50,24 @@ int opcoes;
                 printf("\n");
                 break;
             case 4:
+                printf("*---MOVIMENTOS DA PEÇA CAVALO---*\n");
+                while (CAVALO--)
+                {
+                    for(int c = 0; c < 2; c++) {
+                   printf("BAIXO!\n"); //IMPRIME "CIMA" DUAS VEZES
+                   printf("\n");
+                    }
+                printf("DIREITA!\n"); //IMPRIME "DIREITA" UMA VEZ
+                printf("\n");
+                }
+                break;  
+            case 5:
                 printf("Saindo...\n");
                 break;
             default:
                 printf("Opção inválida!\n");
         }
-    } while (option != 4);
+    } while (option != 5);
    
     return 0;
 }
